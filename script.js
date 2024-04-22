@@ -1,4 +1,4 @@
-// script.js faylida
+
 document.addEventListener("DOMContentLoaded", function() {
     const searchForm = document.querySelector('.search-form');
     const input = document.getElementById('input');
@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const cocktailElement = document.createElement('div');
             cocktailElement.classList.add('cocktail'); 
             cocktailElement.innerHTML = `
-                <h3>${cocktail.strDrink}</h3> <!-- Name o'rniga strDrink -->
-                <p>${cocktail.strInstructions}</p> <!-- Description o'rniga strInstructions -->
+                <h3>${cocktail.strDrink}</h3>
+                <p>${cocktail.strInstructions}</p> 
                <img src="${cocktail.strDrinkThumb}/preview" alt="${cocktail.strDrink}" />
 
                 
