@@ -25,15 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
         } catch (error) {
             console.error('Error fetching cocktails:', error);
         } finally {
-            loader.classList.add('hidden'); // Yuklanish tugagandan so'ng loader ni yashirish
+            loader.classList.add('hidden'); 
         }
     }
-
-    // Cocktaillarni ko'rsatish
     function displayCocktails(cocktails) {
         cocktails.forEach(cocktail => {
             const cocktailElement = document.createElement('div');
-            cocktailElement.classList.add('cocktail'); // klass nomi cocktail bo'ldi
+            cocktailElement.classList.add('cocktail'); 
             cocktailElement.innerHTML = `
                 <h3>${cocktail.strDrink}</h3> <!-- Name o'rniga strDrink -->
                 <p>${cocktail.strInstructions}</p> <!-- Description o'rniga strInstructions -->
